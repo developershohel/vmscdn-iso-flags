@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES2017",
     "module": "ESNext",
-    "jsx": "react-jsx",   // ✅ this is the key
-    "outDir": "dist",
+    "moduleResolution": "node",
+    "lib": ["ES2017", "DOM"],
+    "resolveJsonModule": true,
     "esModuleInterop": true,
-    "declaration": true,
-    "skipLibCheck": true
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "strict": true,
+    "outDir": "dist"
   },
   "include": ["src"]
 }
