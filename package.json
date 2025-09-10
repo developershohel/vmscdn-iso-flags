@@ -1,0 +1,49 @@
+{
+  "name": "vmscdn-iso-flags",
+  "version": "1.0.0",
+  "description": "ISO country flags and names with inline SVG support for React, Vue, and plain HTML",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "countries.json",
+    "svg"
+  ],
+  "keywords": [
+    "flags",
+    "iso",
+    "svg",
+    "country",
+    "vmscdn",
+    "react",
+    "vue",
+    "typescript"
+  ],
+  "author": "Developer Shohel <developershohel@yahoo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developershohel/vmscdn-iso-flags.git"
+  },
+  "bugs": {
+    "url": "https://github.com/developershohel/vmscdn-iso-flags/issues"
+  },
+  "homepage": "https://github.com/developershohel/vmscdn-iso-flags#readme",
+  "scripts": {
+    "build": "tsc && vite build",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "vite": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "vue": "^2.6.0 || ^3.0.0"
+  },
+  "dependencies": {
+    "svgo": "^3.0.2"
+  }
+}
